@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Portfolio</title>
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:dodgerblue;
+  }
+  header {
+    background-color:tomato;
+    color:blue;
+    padding: 9px ;
+    text-align: center;
+  }
+  /*the sides of the page like border */
+  .container { 
+    width: 1mp;
+    margin: auto;
+    overflow: visible;
+  }
+  .profile-img {
+    width: 20mp;
+    height: 20mp;
+    border-radius: 100%;
+    margin:  100px auto;
+    display: visible; 
+  }
+  .intro {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+  }
+  .project-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color:violet;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .project-img {
+    width: 1000%;
+    height: 1500px;
+    object-fit: cover;
+  }
+  .project-info {
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Karthik aryaa</h1>
+    <p>Web Developer</p>
+  </header>
+  <div class="container">
+   <img src="C:\Users\Lenovo\Desktop" alt="Profile Image" class="profile-img"> 
+
+    <div class="intro">
+      <p>Hello! I'm a web developer passionate about creating amazing websites.</p>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1" class="project-img">
+        <div class="project-info">
+          <h3>Project 1</h3>
+          <p>Description of project 1 goes here.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2" class="project-img">
+        <div class="project-info">
+          <h3>Project 2</h3>
+          <p>Description of project 2 goes here.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project 3" class="project-img">
+        <div class="project-info">
+          <h3>Project 3</h3>
+          <p>Description of project 3 goes here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
